@@ -45,6 +45,44 @@
             max-width: 900px;
             margin: 0 auto 2em;
         }
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 1em;
+        }
+        @media (max-width: 720px) {
+            .two-col {
+                grid-template-columns: 1fr;
+            }
+        }
+        table.retro {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid black;
+            background: #d9d9d9;
+        }
+        table.retro th {
+            background: yellow;
+            color: black;
+            border-bottom: 2px solid black;
+            padding: 10px 12px;
+            font-size: 1.35em;
+            text-align: center;
+        }
+        table.retro td {
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        table.retro .muted {
+            opacity: 0.9;
+        }
+        table.retro hr {
+            border: none;
+            border-top: 1px solid black;
+            margin: 10px 0;
+        }
     </style>
 </head>
 
@@ -100,46 +138,105 @@
     <h2>
         <a href="index.html">Volver al evento</a>
     </h2>
-    <br><br>
+    <br>
 
-    <b>Evento</b><br>
-    El Día del HTML es una juntada para hacer cosas en (y con) la web, inspirada en <a href="https://html.energy" target="_blank">HTML.energy</a>:
-    páginas personales, experiments, poemas, collages, prototipos, zines, archivos raros, lo que pinte.<br>
-    No hace falta traer compu si no vas a trabajar con compu: podés venir a mirar, conversar, ayudar, o armar algo en papel y después pasarlo a HTML (o dejarlo como obra en sí).<br><br>
+    <div class="two-col">
+        <table class="retro" border="2" cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Evento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        El Día del HTML es una juntada para hacer cosas en (y con) la web, inspirada en
+                        <a href="https://html.energy" target="_blank">HTML.energy</a>: páginas personales, experiments,
+                        poemas, collages, prototipos, zines, archivos raros, lo que pinte.
+                        <hr>
+                        <span class="muted">
+                            No hace falta traer compu si no vas a trabajar con compu: podés venir a mirar, conversar,
+                            ayudar, o armar algo en papel y después pasarlo a HTML (o dejarlo como obra en sí).
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
-    <b>Experiencia en HTML</b><br>
-    No hace falta saber: nos vamos a ayudar entre todos. Si querés llegar con una mínima base, acá van recursos muy simples (y gratis):<br><br>
+        <table class="retro" border="2" cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Experiencia en HTML</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        No hace falta saber: nos vamos a ayudar entre todos. Si querés llegar con una mínima base, acá van
+                        recursos muy simples (y gratis):
+                        <hr>
+                        <a href="https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Getting_started" target="_blank">MDN: empezar con HTML</a><br>
+                        <a href="https://developer.mozilla.org/es/docs/Learn/CSS/First_steps" target="_blank">MDN: primeros pasos con CSS</a><br>
+                        <a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps" target="_blank">MDN: primeros pasos con JavaScript</a><br>
+                        <a href="https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/" target="_blank">freeCodeCamp: Responsive Web Design</a><br>
+                        <a href="https://www.freecodecamp.org/espanol/learn/javascript-algorithms-and-data-structures/" target="_blank">freeCodeCamp: JavaScript</a><br>
+                        <a href="https://javascript.info/" target="_blank">javascript.info (inglés): guía completa</a>
+                        <hr>
+                        Si ya sabés un poco, mejor todavía: traé tus trucos, snippets y recursos para compartir.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
-    <a href="https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Getting_started" target="_blank">MDN: empezar con HTML</a><br>
-    <a href="https://developer.mozilla.org/es/docs/Learn/CSS/First_steps" target="_blank">MDN: primeros pasos con CSS</a><br>
-    <a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps" target="_blank">MDN: primeros pasos con JavaScript</a><br>
-    <a href="https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/" target="_blank">freeCodeCamp: Responsive Web Design</a><br>
-    <a href="https://www.freecodecamp.org/espanol/learn/javascript-algorithms-and-data-structures/" target="_blank">freeCodeCamp: JavaScript</a><br>
-    <a href="https://javascript.info/" target="_blank">javascript.info (inglés): guía completa</a><br><br>
+        <table class="retro" border="2" cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Servidor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Un “hosting” (o servidor) es el lugar donde subís tus archivos (por ejemplo <code>index.html</code>,
+                        imágenes, CSS) para que tu sitio quede online con una URL.
+                        <hr>
+                        Si no tenés uno para usar en el evento, recomendamos crearte una cuenta en alguno de estos hostings
+                        para sitios estáticos:
+                        <hr>
+                        <b>Neocities</b><br>
+                        Te da un sitio y un panel web para subir archivos o editar tu HTML desde el navegador. En general,
+                        tu home va a ser <code>index.html</code> en la raíz del sitio.<br><br>
+                        - <a href="https://neocities.org/" target="_blank">Crear cuenta / entrar</a><br>
+                        - Subís una carpeta o archivos sueltos (HTML/CSS/JS/imagenes)<br>
+                        - Publica con una URL del estilo <code>tusitio.neocities.org</code><br>
+                        <hr>
+                        <b>Nekoweb</b><br>
+                        Funciona parecido: sitio estático + administrador de archivos para subir y organizar tu web.<br><br>
+                        - <a href="https://nekoweb.org/" target="_blank">Crear cuenta / entrar</a><br>
+                        - Subís tus archivos y apuntás a <code>index.html</code> como página principal<br>
+                        <hr>
+                        Si preferís, también sirve cualquier otra opción de hosting (GitHub Pages, Netlify, tu propio servidor, etc.).
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
-    Si ya sabés un poco, mejor todavía: traé tus trucos, snippets y recursos para compartir.<br><br>
-
-    <b>Servidor</b><br>
-    Un “hosting” (o servidor) es el lugar donde subís tus archivos (por ejemplo `index.html`, imágenes, CSS) para que tu sitio quede online con una URL.<br>
-    Si no tenés uno para usar en el evento, recomendamos crearte una cuenta en alguno de estos hostings para sitios estáticos:<br><br>
-
-    <b>Neocities</b><br>
-    Neocities te da un sitio y un panel web para subir archivos o editar tu HTML desde el navegador. En general, tu home va a ser `index.html` en la raíz del sitio.<br>
-    - <a href="https://neocities.org/" target="_blank">Crear cuenta / entrar</a><br>
-    - Subís una carpeta o archivos sueltos (HTML/CSS/JS/imagenes)<br>
-    - Tu sitio queda publicado al toque con una URL del estilo `tusitio.neocities.org`<br><br>
-
-    <b>Nekoweb</b><br>
-    Nekoweb funciona parecido: te da un sitio estático y un administrador de archivos para subir y organizar tu web. Ideal para publicar rápido durante el evento.<br>
-    - <a href="https://nekoweb.org/" target="_blank">Crear cuenta / entrar</a><br>
-    - Subís tus archivos y apuntás a `index.html` como página principal<br><br>
-
-    Si preferís, también sirve cualquier otra opción de hosting (GitHub Pages, Netlify, tu propio servidor, etc.).<br><br>
-</div>
-
-<div class="anterior">
-    <b>Tip extra</b><br>
-    Si venís sin idea, podés arrancar con una página mínima: un título, un párrafo, un link y una imagen. Con eso ya estás “haciendo web”.<br>
+        <table class="retro" border="2" cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Tip extra</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Si venís sin idea, podés arrancar con una página mínima: un título, un párrafo, un link y una imagen.
+                        Con eso ya estás “haciendo web”.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 
 </body>
