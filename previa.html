@@ -58,30 +58,12 @@
         }
         table.retro {
             width: 100%;
-            border-collapse: collapse;
-            border: 2px solid black;
-            background: #d9d9d9;
         }
-        table.retro th {
-            background: yellow;
-            color: black;
-            border-bottom: 2px solid black;
-            padding: 10px 12px;
+        .block-title {
             font-size: 1.35em;
-            text-align: center;
         }
-        table.retro td {
-            padding: 12px;
-            text-align: left;
-            vertical-align: top;
-        }
-        table.retro .muted {
+        .muted {
             opacity: 0.9;
-        }
-        table.retro hr {
-            border: none;
-            border-top: 1px solid black;
-            margin: 10px 0;
         }
     </style>
 </head>
@@ -133,7 +115,7 @@
 </header>
 
 <div class="info">
-    <h1>Preparativos / ayuda antes del evento</h1>
+    <h1>Preparativos</h1>
     <br>
     <h2>
         <a href="index.html">Volver al evento</a>
@@ -141,19 +123,19 @@
     <br>
 
     <div class="two-col">
-        <table class="retro" border="2" cellpadding="0" cellspacing="0">
-            <thead>
-                <tr>
-                    <th>Evento</th>
-                </tr>
-            </thead>
+        <table class="retro" border="2" cellpadding="10" cellspacing="0">
             <tbody>
+                <tr>
+                    <th bgcolor="yellow" align="center">
+                        <span class="block-title">Evento</span>
+                    </th>
+                </tr>
                 <tr>
                     <td>
                         El Día del HTML es una juntada para hacer cosas en (y con) la web, inspirada en
                         <a href="https://html.energy" target="_blank">HTML.energy</a>: páginas personales, experiments,
                         poemas, collages, prototipos, zines, archivos raros, lo que pinte.
-                        <hr>
+                        <br><br>
                         <span class="muted">
                             No hace falta traer compu si no vas a trabajar con compu: podés venir a mirar, conversar,
                             ayudar, o armar algo en papel y después pasarlo a HTML (o dejarlo como obra en sí).
@@ -163,71 +145,71 @@
             </tbody>
         </table>
 
-        <table class="retro" border="2" cellpadding="0" cellspacing="0">
-            <thead>
-                <tr>
-                    <th>Experiencia en HTML</th>
-                </tr>
-            </thead>
+        <table class="retro" border="2" cellpadding="10" cellspacing="0">
             <tbody>
+                <tr>
+                    <th bgcolor="yellow" align="center">
+                        <span class="block-title">Experiencia en HTML</span>
+                    </th>
+                </tr>
                 <tr>
                     <td>
                         No hace falta saber: nos vamos a ayudar entre todos. Si querés llegar con una mínima base, acá van
                         recursos muy simples (y gratis):
-                        <hr>
+                        <br><br>
                         <a href="https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Getting_started" target="_blank">MDN: empezar con HTML</a><br>
                         <a href="https://developer.mozilla.org/es/docs/Learn/CSS/First_steps" target="_blank">MDN: primeros pasos con CSS</a><br>
                         <a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps" target="_blank">MDN: primeros pasos con JavaScript</a><br>
                         <a href="https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/" target="_blank">freeCodeCamp: Responsive Web Design</a><br>
                         <a href="https://www.freecodecamp.org/espanol/learn/javascript-algorithms-and-data-structures/" target="_blank">freeCodeCamp: JavaScript</a><br>
                         <a href="https://javascript.info/" target="_blank">javascript.info (inglés): guía completa</a>
-                        <hr>
+                        <br><br>
                         Si ya sabés un poco, mejor todavía: traé tus trucos, snippets y recursos para compartir.
                     </td>
                 </tr>
             </tbody>
         </table>
 
-        <table class="retro" border="2" cellpadding="0" cellspacing="0">
-            <thead>
-                <tr>
-                    <th>Servidor</th>
-                </tr>
-            </thead>
+        <table class="retro" border="2" cellpadding="10" cellspacing="0">
             <tbody>
+                <tr>
+                    <th bgcolor="yellow" align="center">
+                        <span class="block-title">Servidor</span>
+                    </th>
+                </tr>
                 <tr>
                     <td>
                         Un “hosting” (o servidor) es el lugar donde subís tus archivos (por ejemplo <code>index.html</code>,
                         imágenes, CSS) para que tu sitio quede online con una URL.
-                        <hr>
+                        <br><br>
                         Si no tenés uno para usar en el evento, recomendamos crearte una cuenta en alguno de estos hostings
                         para sitios estáticos:
-                        <hr>
+                        <br><br>
                         <b>Neocities</b><br>
                         Te da un sitio y un panel web para subir archivos o editar tu HTML desde el navegador. En general,
                         tu home va a ser <code>index.html</code> en la raíz del sitio.<br><br>
                         - <a href="https://neocities.org/" target="_blank">Crear cuenta / entrar</a><br>
                         - Subís una carpeta o archivos sueltos (HTML/CSS/JS/imagenes)<br>
                         - Publica con una URL del estilo <code>tusitio.neocities.org</code><br>
-                        <hr>
+                        <br><br>
                         <b>Nekoweb</b><br>
                         Funciona parecido: sitio estático + administrador de archivos para subir y organizar tu web.<br><br>
                         - <a href="https://nekoweb.org/" target="_blank">Crear cuenta / entrar</a><br>
                         - Subís tus archivos y apuntás a <code>index.html</code> como página principal<br>
-                        <hr>
+                        <br><br>
                         Si preferís, también sirve cualquier otra opción de hosting (GitHub Pages, Netlify, tu propio servidor, etc.).
                     </td>
                 </tr>
             </tbody>
         </table>
 
-        <table class="retro" border="2" cellpadding="0" cellspacing="0">
-            <thead>
-                <tr>
-                    <th>Tip extra</th>
-                </tr>
-            </thead>
+        <table class="retro" border="2" cellpadding="10" cellspacing="0">
             <tbody>
+                <tr>
+                    <th bgcolor="yellow" align="center">
+                        <span class="block-title">Tip extra</span>
+                    </th>
+                </tr>
                 <tr>
                     <td>
                         Si venís sin idea, podés arrancar con una página mínima: un título, un párrafo, un link y una imagen.
